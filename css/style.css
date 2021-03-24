@@ -169,6 +169,7 @@ font-family: 'Roboto', sans-serif;
     color: #3ea2d8;
     border: #d4d4d4 1px solid;
     margin-top: 7%;
+    cursor: pointer;
 }
 
 @media (max-width: 1024px) {
