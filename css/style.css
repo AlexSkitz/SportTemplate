@@ -100,13 +100,14 @@ font-family: 'Roboto', sans-serif;
 */
 
 .main{
-    min-height: 200vh;
-    background: url("../images/banner.jpg") no-repeat ;
+    min-height: 100vh;
+    background: url("../images/banner.jpg") no-repeat 100% 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 384px 0 160px;
     background-size: cover;
+    width: 100%;
 }
 
 .main .container{
@@ -155,7 +156,7 @@ font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
    
 }
-.container p{
+.main .container p{
     font-family: 'Raleway', sans-serif;
     color: #fff;
     font-size: 23px;
@@ -163,11 +164,11 @@ font-family: 'Roboto', sans-serif;
     text-align: center;
 } 
 
-.container img{
+.main .container img{
     margin-bottom: 60px;
     width: 590px;
 } 
-.container input{
+.main .container input{
     width: 255px;
     height: 55px;
     border-radius: 25px;
@@ -226,13 +227,13 @@ font-family: 'Roboto', sans-serif;
 } 
 .second-screen{
     background-color: #000;
-    max-height: 515px;
-    min-height:  100vh;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 140px 0;
+    width: 100%;
 }
 .second-screen h2{
     font-family:'Raleway',sans-serif ;
@@ -249,11 +250,11 @@ font-family: 'Roboto', sans-serif;
     max-width: 900px;
     text-align: center;
     line-height: 30px;
+    padding: 0 15px;
 }
 .third-screen{
     background-color: #1b1b1b;
-    max-height: 375px;
-    min-height:  100vh;
+    
 }
 .third-screen .container{
     display: flex;
@@ -268,6 +269,7 @@ font-family: 'Roboto', sans-serif;
     justify-content: space-between;
     align-items: left;
     max-width: 300px;
+    padding: 0 15px;
 }
 .third-screen_item h3{
     font-family: 'Raleway',sans-serif;
@@ -283,61 +285,8 @@ font-family: 'Roboto', sans-serif;
     color: #fff;
     text-align: left;
 }
-@media (max-width: 1024px) {
-    
-.first-screen p {
-    font-size: 18px;
-}
-.first-screen input{
-    width: 225px;
-    height: 45px;
-    border-radius: 20px;
-    font-size: 20px;
-   }
-}
-@media (max-width: 768px) {
-    
-    .first-screen p {
-        font-size: 16px;
-    }
-    .first-screen input{
-        width: 195px;
-        height: 35px;
-        border-radius: 15px;
-        font-size: 16px;
-        margin-top: 4%;
-       }
-       .first-screen img{
-        margin-bottom: 3%;
-    }   
-    .first-screen{
-        padding: 7% 0; 
-    }
-    .navi_item a {
-        font-size: 16px;
-    }
-    }
-@media (max-width: 600px) {
-    .first-screen p{
-        max-width: 80%;
-        font-size: 14px;
-    }
-    .first-screen input{
-        width: 160px;
-        height: 25px;
-        border-radius: 10px;
-        font-size: 14px;
-    }
-    .navi_item a{
-        font-size: 14px;
-    }
-    .navi{
-        padding: 11px 0;
-    }
-    .flex-between a{
-        padding: 2px 0;
-    }
-}
+
+
 @media (max-width: 800px){
     .mobile-button {
         display: inline-flex;
@@ -365,6 +314,38 @@ font-family: 'Roboto', sans-serif;
     .flex-between a{
         padding: 0px;
     }
+    .third-screen .container{
+        flex-wrap: wrap;
+    }
+    .third-screen_item{
+        margin-bottom: 25px;
+    }
+    .main{
+        padding: 200px 0 100px;
+    }
+    .main .container img{
+        width: 70%;
+    }
+    .main .container p{
+        font-size: 18px;
+    }
+    .main .container input{
+        width: 170px;
+        height: 40px;
+        border-radius: 16px ;
+        font-size: 20px;
+    }
+    .second-screen h2{
+        font-size: 25px;
+    }
+    .second-screen p{
+        font-size: 15px;
+    }
+    .third-screen_item h3{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .third-screen_item p{
+        font-size: 13px;
+    }
 }
-/*
-*/
